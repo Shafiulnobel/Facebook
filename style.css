@@ -6,12 +6,14 @@ body{
     box-sizing: border-box;
 }
 header{
-    
+   
+ 
     background-color: white;
     padding: 10px 0;
-    box-shadow: 0 0 4px;
+    box-shadow: 0 0 4px black;
 }
 .header{
+ 
     display: flex;
     justify-content: space-between;
 }
@@ -66,7 +68,7 @@ header{
     margin-right: 16px;
 }
  .right-header a{
-    padding: 13px 13px;
+    padding: 15px;
     border-radius: 50%;
     background-color: lightgrey;
     margin-left: 2%;
@@ -75,11 +77,15 @@ header{
     background-color: rgba(211, 211, 211, 0.534);
 } 
 .right-header img{
-    height: 28px;
-    width: 28px;
+    height: 20px;
+    width: 20px;
 }
 
 /*main*/
+main{
+    margin-top: 1px;
+    background-color: #f0f2f5;
+}
 /*main-left*/
 .main-left{
     padding-left: 16px;
@@ -103,4 +109,124 @@ header{
     width: 20%;
     position: absolute;
 
+}
+/*main-middle*/
+.main-middle{
+  
+    padding-top: 16px;
+}
+/*story*/
+.story{
+    position: relative;
+}
+.box{
+  
+    width: 112px;
+    height: 198px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.sp:hover img{
+    transform: scale(1.1);
+    transition: transform 1s ease;
+}
+.sp{
+    position: relative;
+}
+.sub:hover .str{
+    
+    transform: scale(1.2);
+    transition: transform 1s ease;
+}
+.box:first-child{
+    box-shadow: 0px 0px 2px;
+    background: white;
+}
+.box:first-child>img{
+    width: 100%;
+    height: 70%;
+}
+.box:first-child .plus{
+    width: 30%;
+    left: 35px;
+    bottom: -10px;
+    position: absolute;
+}
+.sp h5{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.story{
+    
+    display: grid;
+    grid-template-columns: repeat(5,112px);
+    grid-gap: 5px;
+}
+
+.sub>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+   
+}
+ .sub .profile{
+    position: absolute;
+    width: 8%;
+    top: -60px;
+    left: 120px;
+
+} 
+.sub .profile1{
+    position: absolute;
+    width: 8%;
+    top: -60px;
+    left: 240px;
+
+} 
+.sub .profile2{
+    position: absolute;
+    width: 8%;
+    top: -60px;
+    left: 355px;
+
+} 
+.sub .profile3{
+    position: absolute;
+    width: 8%;
+    top: -60px;
+    left: 475px;
+
+} 
+.sub h5{
+    position: absolute;
+    top: 140px;
+    color: white;
+    font-weight: 700;
+}
+
+/*main-right*/
+.main-right{
+    padding-top: 16px;
+}
+.bd-card{
+    width: 328px;
+    height: 96px;
+    background-color: white;
+    box-shadow: 0 0 4px black;
+    padding: 16px;
+    border-radius: 10px;
+}
+.bd-card img{
+      width: 8%;
+}
+
+.bd-card .name{
+    font-weight: 700;
+}
+
+.main{
+   display: flex;
+   justify-content: space-between;
 }
